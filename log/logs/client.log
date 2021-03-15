@@ -23,3 +23,12 @@
 2021-03-09 13:20:25,438 - INFO - client.py - Отправка сообщения presence от клиента GUEST
 2021-03-09 13:20:25,438 - INFO - client.py - Сообщение presence от клиента GUEST отправлено на сервер
 2021-03-09 13:20:25,438 - INFO - client.py - Получен ответ [200] OK от сервера для клиента GUEST
+2021-03-15 14:24:46,606 - INFO - client_log_config.py - Лог-файл от 2021-03-15 14:24:46.606404
+2021-03-15 14:24:46,607 - INFO - client.py - Клиент GUEST создан с параметрами 127.0.0.1 8888
+2021-03-15 14:24:46,608 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() и вызвала логер
+2021-03-15 14:24:46,608 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-15 14:24:46,609 - DEBUG - decorators.py - Функция send_message ((<utils.utils.PresenceMessage object at 0x7f93d2642160>,), {}) вызвана из функции client.create_connection() и вызвала логер
+2021-03-15 14:24:46,609 - INFO - client.py - Отправка сообщения presence от клиента GUEST
+2021-03-15 14:24:46,609 - INFO - client.py - Сообщение presence от клиента GUEST отправлено на сервер
+2021-03-15 14:24:46,609 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() и вызвала логер
+2021-03-15 14:24:46,609 - INFO - client.py - Получен ответ [200] OK от сервера для клиента GUEST

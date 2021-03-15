@@ -9,6 +9,7 @@ from socket import AF_INET, SOCK_STREAM, socket
 from utils.utils import create_parser
 from utils.config import ENCODING, MAX_CONNECTIONS, MAX_PACKAGE_LENGTH
 from log import server_log_config
+from utils.decorators import log
 
 RESPONSE_ERROR = 400
 RESPONSE_OK = 200
@@ -23,6 +24,7 @@ class Server:
         self.addr, self.port = create_parser()
         self.logger.info(f'Сервер создан с параметрами {self.addr} {self.port}')
 
+    @log
     def create_connection(self):
         try:
             self._s.bind((self.addr, self.port))
@@ -45,6 +47,7 @@ class Server:
                 client.send(f'{response}'.encode(ENCODING))
                 client.close()
 
+    @log
     def process_client_message(self, message):
         self.logger.info(f'Обработка сообщения {message}')
         if message['action'] == 'presence' and message['user']['account_name'] == 'GUEST':
