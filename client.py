@@ -7,7 +7,7 @@
 from socket import AF_INET, SOCK_STREAM, socket
 from utils.utils import create_parser, NonPresenceMessage, PresenceMessage, Response
 from utils.config import ENCODING, MAX_PACKAGE_LENGTH
-
+from utils.decorators import log
 import logging
 from log import client_log_config
 
@@ -22,6 +22,7 @@ class Client:
         self.addr, self.port = create_parser()
         self.logger.info(f'Клиент {self.account_name} создан с параметрами {self.addr} {self.port}')
 
+    @log
     def create_connection(self):
         try:
             self._s.connect((self.addr, self.port))
@@ -30,10 +31,10 @@ class Client:
         except:
             self.logger.critical(f'Не удалось подключиться к серверу')
             print('Не удалось подключиться к серверу')
-
+    @log
     def close_connection(self):
         self.send_message(NonPresenceMessage(user={'account_name': self.account_name}))
-
+    @log
     def send_message(self, message):
         self.logger.info(f'Отправка сообщения {message.action} от клиента {self.account_name}')
         try:
@@ -44,7 +45,7 @@ class Client:
             self.logger.error(f'Сообщение {message.action} от клиента {self.account_name} не отправлено на сервер')
 
         return self.get_response()
-
+    @log
     def get_response(self):
         response = Response(self._s.recv(MAX_PACKAGE_LENGTH).decode(ENCODING))
         self.logger.info(f'Получен ответ {response} от сервера для клиента {self.account_name}')
