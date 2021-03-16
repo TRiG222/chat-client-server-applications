@@ -2,7 +2,7 @@
 import argparse
 import json
 from time import time
-from utils.config import DEFAULT_IP_ADDRESS, DEFAULT_PORT, DICT_ANSWER_CODE, ENCODING, NON_PRESENCE, PRESENCE
+from utils.config import DEFAULT_IP_ADDRESS, DEFAULT_PORT, DICT_ANSWER_CODE, ENCODING, DEFAULT_CLIENT_ID, PRESENCE, CHAT
 
 
 class Message:
@@ -36,14 +36,26 @@ class PresenceMessage(Message):
         return _pr
 
 
-class NonPresenceMessage(Message):
-    def __init__(self, user=None):
-        super().__init__(action=NON_PRESENCE)
+# class NonPresenceMessage(Message):
+#     def __init__(self, user=None):
+#         super().__init__(action=NON_PRESENCE)
+#         self.user = user
+#
+#     def serialize(self):
+#         _pr = super().serialize()
+#         _pr['user'] = self.user
+#         return _pr
+
+class ChatMessage(Message):
+    def __init__(self, user=None, text=None):
+        super().__init__(action=CHAT)
         self.user = user
+        self.text = text
 
     def serialize(self):
         _pr = super().serialize()
         _pr['user'] = self.user
+        _pr['text'] = self.text
         return _pr
 
 
@@ -73,23 +85,24 @@ class Response:
         return encoded_message
 
 
-def create_parser():
+def create_arguments_parser():
+
     parser = argparse.ArgumentParser(description='Укажите адрес и порт')
-    if parser.prog == 'server.py':
-        parser.add_argument('-a', '--addr', default=DEFAULT_IP_ADDRESS, help='IP адрес')
-        parser.add_argument('-p', '--port', type=int, default=DEFAULT_PORT, help='Порт (от 1024 до 65535)')
-    elif parser.prog == 'client.py':
-        parser.add_argument('-a', '--addr', default=DEFAULT_IP_ADDRESS, help='IP адрес')
-        parser.add_argument('-p', '--port', type=int, default=DEFAULT_PORT, help='Порт (от 1024 до 65535)')
+    parser.add_argument('-a', '--addr', default=DEFAULT_IP_ADDRESS, help='IP адрес')
+    parser.add_argument('-p', '--port', type=int, default=DEFAULT_PORT, help='Порт (от 1024 до 65535)')
+    parser.add_argument('-i', '--id', default=DEFAULT_CLIENT_ID, help='id Клиента')
+    args = parser.parse_args()
 
     try:
+        client_id = args.id
         addr = parser.parse_args().addr
         port = parser.parse_args().port
         if port < 1024 or port > 65535:
             raise
     except:
+        client_id = DEFAULT_CLIENT_ID
         addr = DEFAULT_IP_ADDRESS
         port = DEFAULT_PORT
         print(f'Неверные параметры, применены стандартные: IP {DEFAULT_IP_ADDRESS}, port {DEFAULT_PORT}')
 
-    return addr, port
+    return addr, port, client_id
