@@ -5,6 +5,9 @@ DEFAULT_PORT = 8888
 # IP адрес по умолчанию для подключения клиента
 DEFAULT_IP_ADDRESS = '127.0.0.1'
 
+DEFAULT_CLIENT_ID = 'UNKNOWN'
+
+
 DEFAULT_USER = 'GUEST'
 # Максимальная очередь подключений
 MAX_CONNECTIONS = 5
@@ -21,6 +24,7 @@ ACCOUNT_NAME = 'account_name'
 
 # Прочие ключи, используемые в протоколе
 PRESENCE = 'presence'
+CHAT = 'chat'
 NON_PRESENCE = 'non_presence'
 RESPONSE = 'response'
 ERROR = 'error'
