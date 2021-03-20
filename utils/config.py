@@ -1,9 +1,14 @@
 """Константы"""
 
 # Порт по умолчанию для сетевого ваимодействия
+import json
+import time
+
 DEFAULT_PORT = 8888
 # IP адрес по умолчанию для подключения клиента
 DEFAULT_IP_ADDRESS = '127.0.0.1'
+
+DEFAULT_CLIENT_ID = 'UNKNOWN'
 
 DEFAULT_USER = 'GUEST'
 # Максимальная очередь подключений
@@ -13,18 +18,13 @@ MAX_PACKAGE_LENGTH = 1024
 # Кодировка проекта
 ENCODING = 'utf-8'
 
-# Прококол JIM основные ключи:
-ACTION = 'action'
-TIME = 'time'
-USER = 'user'
-ACCOUNT_NAME = 'account_name'
-
 # Прочие ключи, используемые в протоколе
 PRESENCE = 'presence'
-NON_PRESENCE = 'non_presence'
 RESPONSE = 'response'
 ERROR = 'error'
-QUIT = 'quit'
+MESSAGE = 'message'
+MESSAGE_TEXT = 'mess_text'
+EXIT = 'exit'
 
 # Ключи ответов сервера
 DICT_ANSWER_CODE = {
@@ -43,6 +43,37 @@ DICT_ANSWER_CODE = {
     410: 'User offline',
     500: 'Server ERROR',
 }
+
+# Прококол JIM основные ключи:
+ACTION = 'action'
+TIME = 'time'
+USER = 'user'
+ACCOUNT_NAME = 'account_name'
+SENDER = 'from'
+DESTINATION = 'to'
+
+# Ключ для всех клиентов
+ALL_CLIENTS = 'all'
+SERVER_ONLY = 'server'
+
+
+def get_message(sender, message_text, destination):
+    return {
+        ACTION: MESSAGE,
+        SENDER: sender,
+        DESTINATION: destination,
+        TIME: time.time(),
+        MESSAGE_TEXT: message_text
+    }
+
+
+def dict_to_bytes(the_dict):
+    return json.dumps(the_dict, indent=2).encode(ENCODING)
+
+
+def bytes_to_dict(the_binary):
+    return json.loads(the_binary.decode(ENCODING))
+
 
 DEBUG = True
 LOGGING_LEVEL = 'WARNING'

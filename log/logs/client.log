@@ -32,3 +32,409 @@
 2021-03-15 14:24:46,609 - INFO - client.py - Сообщение presence от клиента GUEST отправлено на сервер
 2021-03-15 14:24:46,609 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() и вызвала логер
 2021-03-15 14:24:46,609 - INFO - client.py - Получен ответ [200] OK от сервера для клиента GUEST
+2021-03-16 14:36:02,226 - INFO - client_log_config.py - Лог-файл от 2021-03-16 14:36:02.226366
+2021-03-16 14:41:27,670 - INFO - client_log_config.py - Лог-файл от 2021-03-16 14:41:27.670015
+2021-03-16 14:41:27,671 - INFO - client.py - Клиент UNKNOWN создан с параметрами 127.0.0.1 8888
+2021-03-16 14:41:27,672 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 14:41:27,672 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 14:41:27,672 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7f9665442100>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 14:41:27,672 - INFO - client.py - Отправка сообщения presence от клиента UNKNOWN
+2021-03-16 14:41:27,673 - INFO - client.py - Сообщение presence от клиента UNKNOWN отправлено на сервер
+2021-03-16 14:41:27,673 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 14:41:27,673 - INFO - client.py - Получен ответ {"action": "presence", "time": 1615894887.643724, "user": {"account_name": "UNKNOWN"}} от сервера для клиента UNKNOWN
+2021-03-16 14:41:27,674 - DEBUG - decorators.py - Функция send_chat_message (('client UNKNOWN',), {}) вызвана из функции {client.client_id}') 
+2021-03-16 14:41:27,674 - DEBUG - decorators.py - Функция send ((<utils.utils.ChatMessage object at 0x7f9665442100>,), {}) вызвана из функции {client.client_id}') 
+2021-03-16 14:41:27,674 - INFO - client.py - Отправка сообщения chat от клиента UNKNOWN
+2021-03-16 14:41:27,674 - INFO - client.py - Сообщение chat от клиента UNKNOWN отправлено на сервер
+2021-03-16 14:41:27,674 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции {client.client_id}') 
+2021-03-16 14:43:51,928 - INFO - client.py - Получен ответ {"action": "chat", "time": 1615894887.643724, "user": {"account_name": "UNKNOWN"}, "text": "client UNKNOWN"} от сервера для клиента UNKNOWN
+2021-03-16 14:44:23,210 - INFO - client_log_config.py - Лог-файл от 2021-03-16 14:44:23.210408
+2021-03-16 14:44:23,215 - INFO - client.py - Клиент UNKNOWN создан с параметрами 127.0.0.1 8888
+2021-03-16 14:44:23,217 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 14:44:23,218 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 14:44:23,220 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7fc580c3e100>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 14:44:23,222 - INFO - client.py - Отправка сообщения presence от клиента UNKNOWN
+2021-03-16 14:44:23,223 - INFO - client.py - Сообщение presence от клиента UNKNOWN отправлено на сервер
+2021-03-16 14:44:23,224 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 14:44:28,353 - CRITICAL - client.py - Не удалось подключиться к серверу
+2021-03-16 15:19:24,940 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:19:24.940595
+2021-03-16 15:19:24,940 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:19:24.940630
+2021-03-16 15:19:24,940 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:19:24.940624
+2021-03-16 15:19:24,942 - INFO - client.py - Клиент c1 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:19:24,942 - INFO - client.py - Клиент c3 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:19:24,942 - INFO - client.py - Клиент c2 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:19:24,943 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:19:24,943 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:19:24,943 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:19:24,943 - CRITICAL - client.py - Не удалось подключиться к серверу [Errno 61] Connection refused
+2021-03-16 15:19:24,943 - CRITICAL - client.py - Не удалось подключиться к серверу [Errno 61] Connection refused
+2021-03-16 15:19:24,943 - CRITICAL - client.py - Не удалось подключиться к серверу [Errno 61] Connection refused
+2021-03-16 15:19:33,038 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:19:33.038241
+2021-03-16 15:19:33,039 - INFO - client.py - Клиент c2 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:19:33,039 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:19:33,039 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:19:33,040 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7f97237864c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:19:33,040 - INFO - client.py - Отправка сообщения presence от клиента c2
+2021-03-16 15:19:33,040 - INFO - client.py - Сообщение presence от клиента c2 отправлено на сервер
+2021-03-16 15:19:33,040 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:19:33,040 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:19:33.040524
+2021-03-16 15:19:33,040 - INFO - client.py - Получен ответ {"action": "presence", "time": 1615897173.0314088, "user": {"account_name": "c2"}} от сервера для клиента c2
+2021-03-16 15:19:33,041 - DEBUG - decorators.py - Функция send_chat_message (('client c2',), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:19:33,041 - DEBUG - decorators.py - Функция send ((<utils.utils.ChatMessage object at 0x7f97237864c0>,), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:19:33,041 - INFO - client.py - Отправка сообщения chat от клиента c2
+2021-03-16 15:19:33,041 - INFO - client.py - Сообщение chat от клиента c2 отправлено на сервер
+2021-03-16 15:19:33,041 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:19:33,041 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:19:33.041429
+2021-03-16 15:19:33,041 - INFO - client.py - Клиент c1 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:19:33,041 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:19:33,042 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:19:33,042 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7faef47864c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:19:33,042 - INFO - client.py - Отправка сообщения presence от клиента c1
+2021-03-16 15:19:33,042 - INFO - client.py - Клиент c3 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:19:33,042 - INFO - client.py - Сообщение presence от клиента c1 отправлено на сервер
+2021-03-16 15:19:33,042 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:19:33,042 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:19:33,042 - INFO - client.py - Получен ответ {"action": "chat", "time": 1615897173.0314088, "user": {"account_name": "c2"}, "text": "client c2"} от сервера для клиента c2
+2021-03-16 15:19:33,043 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:19:33,043 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7fa310f864c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:19:33,043 - INFO - client.py - Отправка сообщения presence от клиента c3
+2021-03-16 15:19:33,043 - INFO - client.py - Сообщение presence от клиента c3 отправлено на сервер
+2021-03-16 15:19:33,043 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:19:33,043 - INFO - client.py - Получен ответ {"action": "presence", "time": 1615897173.0343978, "user": {"account_name": "c1"}} от сервера для клиента c1
+2021-03-16 15:19:33,044 - DEBUG - decorators.py - Функция send_chat_message (('client c1',), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:19:33,044 - DEBUG - decorators.py - Функция send ((<utils.utils.ChatMessage object at 0x7faef47864c0>,), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:19:33,044 - INFO - client.py - Отправка сообщения chat от клиента c1
+2021-03-16 15:19:33,044 - INFO - client.py - Сообщение chat от клиента c1 отправлено на сервер
+2021-03-16 15:19:33,044 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:20:02,938 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:20:02.937974
+2021-03-16 15:20:02,938 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:20:02.937974
+2021-03-16 15:20:02,938 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:20:02.937996
+2021-03-16 15:20:02,939 - INFO - client.py - Клиент client2 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:20:02,939 - INFO - client.py - Клиент client1 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:20:02,939 - INFO - client.py - Клиент client3 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:20:02,939 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:02,939 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:02,939 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:02,940 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:20:02,940 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:20:02,940 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:20:02,940 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7f9f5d8864c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:02,940 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7fa1240864c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:02,940 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7ffda40864c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:02,940 - INFO - client.py - Отправка сообщения presence от клиента client1
+2021-03-16 15:20:02,940 - INFO - client.py - Отправка сообщения presence от клиента client2
+2021-03-16 15:20:02,940 - INFO - client.py - Отправка сообщения presence от клиента client3
+2021-03-16 15:20:02,940 - INFO - client.py - Сообщение presence от клиента client1 отправлено на сервер
+2021-03-16 15:20:02,940 - INFO - client.py - Сообщение presence от клиента client2 отправлено на сервер
+2021-03-16 15:20:02,940 - INFO - client.py - Сообщение presence от клиента client3 отправлено на сервер
+2021-03-16 15:20:02,940 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:02,940 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:02,940 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:02,941 - INFO - client.py - Получен ответ {"action": "presence", "time": 1615897202.915103, "user": {"account_name": "client1"}} от сервера для клиента client1
+2021-03-16 15:20:02,942 - DEBUG - decorators.py - Функция send_chat_message (('client client1',), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:20:02,942 - DEBUG - decorators.py - Функция send ((<utils.utils.ChatMessage object at 0x7f9f5d8864c0>,), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:20:02,942 - INFO - client.py - Отправка сообщения chat от клиента client1
+2021-03-16 15:20:02,942 - INFO - client.py - Сообщение chat от клиента client1 отправлено на сервер
+2021-03-16 15:20:02,942 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:20:02,950 - CRITICAL - client.py - Не удалось подключиться к серверу [Errno 54] Connection reset by peer
+2021-03-16 15:20:02,950 - CRITICAL - client.py - Не удалось подключиться к серверу [Errno 54] Connection reset by peer
+2021-03-16 15:20:16,888 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:20:16.888359
+2021-03-16 15:20:16,888 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:20:16.888351
+2021-03-16 15:20:16,889 - INFO - client.py - Клиент client2 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:20:16,889 - INFO - client.py - Клиент client1 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:20:16,889 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:16,889 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:16,889 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:20:16,889 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:20:16,890 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7fbe9c75b4c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:16,890 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7fda190864c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:16,890 - INFO - client.py - Отправка сообщения presence от клиента client2
+2021-03-16 15:20:16,890 - INFO - client.py - Отправка сообщения presence от клиента client1
+2021-03-16 15:20:16,890 - INFO - client.py - Сообщение presence от клиента client2 отправлено на сервер
+2021-03-16 15:20:16,890 - INFO - client.py - Сообщение presence от клиента client1 отправлено на сервер
+2021-03-16 15:20:16,890 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:16,890 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:16,890 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:20:16.890795
+2021-03-16 15:20:16,891 - INFO - client.py - Получен ответ {"action": "presence", "time": 1615897216.882088, "user": {"account_name": "client1"}} от сервера для клиента client1
+2021-03-16 15:20:16,891 - INFO - client.py - Получен ответ {"action": "presence", "time": 1615897216.8820858, "user": {"account_name": "client2"}} от сервера для клиента client2
+2021-03-16 15:20:16,891 - DEBUG - decorators.py - Функция send_chat_message (('client client1',), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:20:16,891 - DEBUG - decorators.py - Функция send_chat_message (('client client2',), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:20:16,891 - DEBUG - decorators.py - Функция send ((<utils.utils.ChatMessage object at 0x7fda190864c0>,), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:20:16,891 - DEBUG - decorators.py - Функция send ((<utils.utils.ChatMessage object at 0x7fbe9c75b4c0>,), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:20:16,891 - INFO - client.py - Отправка сообщения chat от клиента client1
+2021-03-16 15:20:16,891 - INFO - client.py - Отправка сообщения chat от клиента client2
+2021-03-16 15:20:16,891 - INFO - client.py - Сообщение chat от клиента client1 отправлено на сервер
+2021-03-16 15:20:16,891 - INFO - client.py - Сообщение chat от клиента client2 отправлено на сервер
+2021-03-16 15:20:16,891 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:20:16,891 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:20:16,891 - INFO - client.py - Клиент client3 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:20:16,892 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:16,892 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:20:16,892 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7fdfbe0864c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:16,892 - INFO - client.py - Отправка сообщения presence от клиента client3
+2021-03-16 15:20:16,892 - INFO - client.py - Сообщение presence от клиента client3 отправлено на сервер
+2021-03-16 15:20:16,892 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:16,892 - INFO - client.py - Получен ответ {"action": "chat", "time": 1615897216.8820858, "user": {"account_name": "client2"}, "text": "client client2"} от сервера для клиента client2
+2021-03-16 15:20:16,892 - INFO - client.py - Получен ответ {"action": "chat", "time": 1615897216.882088, "user": {"account_name": "client1"}, "text": "client client1"} от сервера для клиента client1
+2021-03-16 15:20:38,311 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:20:38.311408
+2021-03-16 15:20:38,311 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:20:38.311409
+2021-03-16 15:20:38,311 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:20:38.311642
+2021-03-16 15:20:38,312 - INFO - client.py - Клиент client3 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:20:38,312 - INFO - client.py - Клиент client2 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:20:38,312 - INFO - client.py - Клиент client1 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:20:38,312 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:38,312 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:38,312 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:38,312 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:20:38,312 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:20:38,313 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:20:38,313 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7ff815e864c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:38,313 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7fb4caf864c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:38,313 - INFO - client.py - Отправка сообщения presence от клиента client3
+2021-03-16 15:20:38,313 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7fb2f1f604c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:38,313 - INFO - client.py - Отправка сообщения presence от клиента client2
+2021-03-16 15:20:38,313 - INFO - client.py - Отправка сообщения presence от клиента client1
+2021-03-16 15:20:38,313 - INFO - client.py - Сообщение presence от клиента client3 отправлено на сервер
+2021-03-16 15:20:38,313 - INFO - client.py - Сообщение presence от клиента client2 отправлено на сервер
+2021-03-16 15:20:38,313 - INFO - client.py - Сообщение presence от клиента client1 отправлено на сервер
+2021-03-16 15:20:38,313 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:38,313 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:38,313 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:38,314 - INFO - client.py - Получен ответ {"action": "presence", "time": 1615897238.305158, "user": {"account_name": "client3"}} от сервера для клиента client3
+2021-03-16 15:20:38,314 - DEBUG - decorators.py - Функция send_chat_message (('client client3',), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:20:38,314 - DEBUG - decorators.py - Функция send ((<utils.utils.ChatMessage object at 0x7ff815e864c0>,), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:20:38,314 - INFO - client.py - Отправка сообщения chat от клиента client3
+2021-03-16 15:20:38,314 - INFO - client.py - Сообщение chat от клиента client3 отправлено на сервер
+2021-03-16 15:20:38,314 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:20:38,317 - CRITICAL - client.py - Не удалось подключиться к серверу [Errno 54] Connection reset by peer
+2021-03-16 15:20:38,317 - CRITICAL - client.py - Не удалось подключиться к серверу [Errno 54] Connection reset by peer
+2021-03-16 15:20:48,749 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:20:48.748996
+2021-03-16 15:20:48,749 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:20:48.748996
+2021-03-16 15:20:48,749 - INFO - client.py - Клиент client1 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:20:48,749 - INFO - client.py - Клиент client2 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:20:48,750 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:48,750 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:48,750 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:20:48,750 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:20:48,750 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7febe47604c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:48,750 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7f94ea6604c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:48,750 - INFO - client.py - Отправка сообщения presence от клиента client1
+2021-03-16 15:20:48,750 - INFO - client.py - Отправка сообщения presence от клиента client2
+2021-03-16 15:20:48,750 - INFO - client.py - Сообщение presence от клиента client1 отправлено на сервер
+2021-03-16 15:20:48,750 - INFO - client.py - Сообщение presence от клиента client2 отправлено на сервер
+2021-03-16 15:20:48,750 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:48,750 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:48,751 - INFO - client.py - Получен ответ {"action": "presence", "time": 1615897248.743028, "user": {"account_name": "client1"}} от сервера для клиента client1
+2021-03-16 15:20:48,751 - DEBUG - decorators.py - Функция send_chat_message (('client client1',), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:20:48,751 - DEBUG - decorators.py - Функция send ((<utils.utils.ChatMessage object at 0x7febe47604c0>,), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:20:48,751 - INFO - client.py - Отправка сообщения chat от клиента client1
+2021-03-16 15:20:48,751 - INFO - client.py - Сообщение chat от клиента client1 отправлено на сервер
+2021-03-16 15:20:48,751 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:20:48,751 - INFO - client.py - Получен ответ {"action": "presence", "time": 1615897248.742847, "user": {"account_name": "client2"}} от сервера для клиента client2
+2021-03-16 15:20:48,752 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:20:48.752017
+2021-03-16 15:20:48,752 - DEBUG - decorators.py - Функция send_chat_message (('client client2',), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:20:48,752 - DEBUG - decorators.py - Функция send ((<utils.utils.ChatMessage object at 0x7f94ea6604c0>,), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:20:48,752 - INFO - client.py - Отправка сообщения chat от клиента client2
+2021-03-16 15:20:48,752 - INFO - client.py - Сообщение chat от клиента client2 отправлено на сервер
+2021-03-16 15:20:48,752 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:20:48,752 - INFO - client.py - Клиент client3 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:20:48,753 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:48,753 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:20:48,753 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7fa0ac7604c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:48,753 - INFO - client.py - Отправка сообщения presence от клиента client3
+2021-03-16 15:20:48,753 - INFO - client.py - Сообщение presence от клиента client3 отправлено на сервер
+2021-03-16 15:20:48,753 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:20:48,754 - INFO - client.py - Получен ответ {"action": "chat", "time": 1615897248.742847, "user": {"account_name": "client2"}, "text": "client client2"} от сервера для клиента client2
+2021-03-16 15:20:48,754 - INFO - client.py - Получен ответ {"action": "chat", "time": 1615897248.743028, "user": {"account_name": "client1"}, "text": "client client1"} от сервера для клиента client1
+2021-03-16 15:21:13,157 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:21:13.157144
+2021-03-16 15:21:13,157 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:21:13.157145
+2021-03-16 15:21:13,158 - INFO - client.py - Клиент client1 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:21:13,158 - INFO - client.py - Клиент client2 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:21:13,158 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:13,158 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:13,158 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:21:13,158 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:21:13,158 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7fe55e8864c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:13,158 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7fc15bf604c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:13,158 - INFO - client.py - Отправка сообщения presence от клиента client2
+2021-03-16 15:21:13,158 - INFO - client.py - Отправка сообщения presence от клиента client1
+2021-03-16 15:21:13,158 - INFO - client.py - Сообщение presence от клиента client2 отправлено на сервер
+2021-03-16 15:21:13,159 - INFO - client.py - Сообщение presence от клиента client1 отправлено на сервер
+2021-03-16 15:21:13,159 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:13,159 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:13,159 - INFO - client.py - Получен ответ {"action": "presence", "time": 1615897273.148602, "user": {"account_name": "client2"}} от сервера для клиента client2
+2021-03-16 15:21:13,159 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:21:13.159585
+2021-03-16 15:21:13,159 - DEBUG - decorators.py - Функция send_chat_message (('client client2',), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:21:13,159 - DEBUG - decorators.py - Функция send ((<utils.utils.ChatMessage object at 0x7fe55e8864c0>,), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:21:13,159 - INFO - client.py - Отправка сообщения chat от клиента client2
+2021-03-16 15:21:13,159 - INFO - client.py - Сообщение chat от клиента client2 отправлено на сервер
+2021-03-16 15:21:13,160 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:21:13,160 - INFO - client.py - Клиент client3 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:21:13,160 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:13,161 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:21:13,161 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7fede27864c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:13,161 - INFO - client.py - Отправка сообщения presence от клиента client3
+2021-03-16 15:21:13,161 - INFO - client.py - Сообщение presence от клиента client3 отправлено на сервер
+2021-03-16 15:21:13,161 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:13,163 - CRITICAL - client.py - Не удалось подключиться к серверу [Errno 54] Connection reset by peer
+2021-03-16 15:21:13,163 - CRITICAL - client.py - Не удалось подключиться к серверу [Errno 54] Connection reset by peer
+2021-03-16 15:21:25,847 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:21:25.847671
+2021-03-16 15:21:25,849 - INFO - client.py - Клиент UNKNOWN создан с параметрами 127.0.0.1 8888
+2021-03-16 15:21:25,849 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:25,850 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:21:25,850 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7faa978874f0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:25,851 - INFO - client.py - Отправка сообщения presence от клиента UNKNOWN
+2021-03-16 15:21:25,851 - INFO - client.py - Сообщение presence от клиента UNKNOWN отправлено на сервер
+2021-03-16 15:21:25,851 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:33,925 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:21:33.925893
+2021-03-16 15:21:33,926 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:21:33.926048
+2021-03-16 15:21:33,927 - INFO - client.py - Клиент client1 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:21:33,927 - INFO - client.py - Клиент client2 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:21:33,927 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:33,927 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:33,927 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:21:33,928 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:21:33,928 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7fcd6a0864c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:33,928 - INFO - client.py - Отправка сообщения presence от клиента client1
+2021-03-16 15:21:33,928 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7f9eb90864c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:33,928 - INFO - client.py - Сообщение presence от клиента client1 отправлено на сервер
+2021-03-16 15:21:33,928 - INFO - client.py - Отправка сообщения presence от клиента client2
+2021-03-16 15:21:33,928 - INFO - client.py - Сообщение presence от клиента client2 отправлено на сервер
+2021-03-16 15:21:33,928 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:33,928 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:33,932 - CRITICAL - client.py - Не удалось подключиться к серверу [Errno 54] Connection reset by peer
+2021-03-16 15:21:33,932 - CRITICAL - client.py - Не удалось подключиться к серверу [Errno 54] Connection reset by peer
+2021-03-16 15:21:33,933 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:21:33.933352
+2021-03-16 15:21:33,934 - INFO - client.py - Клиент client3 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:21:33,935 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:33,935 - CRITICAL - client.py - Не удалось подключиться к серверу [Errno 61] Connection refused
+2021-03-16 15:21:43,492 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:21:43.492455
+2021-03-16 15:21:43,493 - INFO - client.py - Клиент client1 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:21:43,493 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:43,494 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:21:43,494 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7fb37c8864c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:43,494 - INFO - client.py - Отправка сообщения presence от клиента client1
+2021-03-16 15:21:43,494 - INFO - client.py - Сообщение presence от клиента client1 отправлено на сервер
+2021-03-16 15:21:43,494 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:43,494 - INFO - client.py - Получен ответ {"action": "presence", "time": 1615897303.4853241, "user": {"account_name": "client1"}} от сервера для клиента client1
+2021-03-16 15:21:43,495 - DEBUG - decorators.py - Функция send_chat_message (('client client1',), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:21:43,495 - DEBUG - decorators.py - Функция send ((<utils.utils.ChatMessage object at 0x7fb37c8864c0>,), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:21:43,495 - INFO - client.py - Отправка сообщения chat от клиента client1
+2021-03-16 15:21:43,495 - INFO - client.py - Сообщение chat от клиента client1 отправлено на сервер
+2021-03-16 15:21:43,495 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:21:43,495 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:21:43.495616
+2021-03-16 15:21:43,496 - INFO - client.py - Клиент client2 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:21:43,496 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:43,497 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:21:43,497 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7f89a57604c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:43,497 - INFO - client.py - Отправка сообщения presence от клиента client2
+2021-03-16 15:21:43,497 - INFO - client.py - Сообщение presence от клиента client2 отправлено на сервер
+2021-03-16 15:21:43,497 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:43,497 - INFO - client.py - Получен ответ {"action": "chat", "time": 1615897303.4853241, "user": {"account_name": "client1"}, "text": "client client1"} от сервера для клиента client1
+2021-03-16 15:21:43,498 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:21:43.497997
+2021-03-16 15:21:43,498 - INFO - client.py - Клиент client3 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:21:43,499 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:43,499 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:21:43,499 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7fc376f604c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:43,499 - INFO - client.py - Отправка сообщения presence от клиента client3
+2021-03-16 15:21:43,499 - INFO - client.py - Сообщение presence от клиента client3 отправлено на сервер
+2021-03-16 15:21:43,499 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:21:43,500 - INFO - client.py - Получен ответ {"action": "presence", "time": 1615897303.489532, "user": {"account_name": "client2"}} от сервера для клиента client2
+2021-03-16 15:21:43,500 - DEBUG - decorators.py - Функция send_chat_message (('client client2',), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:21:43,500 - DEBUG - decorators.py - Функция send ((<utils.utils.ChatMessage object at 0x7f89a57604c0>,), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:21:43,500 - INFO - client.py - Отправка сообщения chat от клиента client2
+2021-03-16 15:21:43,500 - INFO - client.py - Сообщение chat от клиента client2 отправлено на сервер
+2021-03-16 15:21:43,500 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:22:10,961 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:22:10.961142
+2021-03-16 15:22:10,962 - INFO - client.py - Клиент UNKNOWN создан с параметрами 127.0.0.1 8888
+2021-03-16 15:22:10,963 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:22:10,963 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:22:10,964 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7fe571f614f0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:22:10,964 - INFO - client.py - Отправка сообщения presence от клиента UNKNOWN
+2021-03-16 15:22:10,964 - INFO - client.py - Сообщение presence от клиента UNKNOWN отправлено на сервер
+2021-03-16 15:22:10,964 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:22:10,965 - INFO - client.py - Получен ответ {"action": "presence", "time": 1615897330.950339, "user": {"account_name": "UNKNOWN"}} от сервера для клиента UNKNOWN
+2021-03-16 15:22:10,965 - INFO - client.py - Получен ответ {"action": "chat", "time": 1615897303.489532, "user": {"account_name": "client2"}, "text": "client client2"} от сервера для клиента client2
+2021-03-16 15:22:10,965 - INFO - client.py - Получен ответ {"action": "presence", "time": 1615897303.491998, "user": {"account_name": "client3"}} от сервера для клиента client3
+2021-03-16 15:22:10,965 - DEBUG - decorators.py - Функция send_chat_message (('client UNKNOWN',), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:22:10,965 - DEBUG - decorators.py - Функция send_chat_message (('client client3',), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:22:10,966 - DEBUG - decorators.py - Функция send ((<utils.utils.ChatMessage object at 0x7fc376f604c0>,), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:22:10,966 - DEBUG - decorators.py - Функция send ((<utils.utils.ChatMessage object at 0x7fe571f614f0>,), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:22:10,966 - INFO - client.py - Отправка сообщения chat от клиента client3
+2021-03-16 15:22:10,966 - INFO - client.py - Отправка сообщения chat от клиента UNKNOWN
+2021-03-16 15:22:10,966 - INFO - client.py - Сообщение chat от клиента UNKNOWN отправлено на сервер
+2021-03-16 15:22:10,966 - INFO - client.py - Сообщение chat от клиента client3 отправлено на сервер
+2021-03-16 15:22:10,966 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:22:10,966 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:23:13,151 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:23:13.151525
+2021-03-16 15:23:13,151 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:23:13.151525
+2021-03-16 15:23:13,151 - INFO - client_log_config.py - Лог-файл от 2021-03-16 15:23:13.151525
+2021-03-16 15:23:13,152 - INFO - client.py - Клиент client2 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:23:13,152 - INFO - client.py - Клиент client1 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:23:13,152 - INFO - client.py - Клиент client3 создан с параметрами 127.0.0.1 8888
+2021-03-16 15:23:13,153 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:23:13,153 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:23:13,153 - DEBUG - decorators.py - Функция create_connection ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:23:13,153 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:23:13,153 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:23:13,153 - INFO - client.py - Клиент подключен с параметрами 127.0.0.1 8888
+2021-03-16 15:23:13,153 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7f9490d604c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:23:13,153 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7fce334604c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:23:13,153 - DEBUG - decorators.py - Функция send ((<utils.utils.PresenceMessage object at 0x7ffdb37604c0>,), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:23:13,153 - INFO - client.py - Отправка сообщения presence от клиента client1
+2021-03-16 15:23:13,153 - INFO - client.py - Отправка сообщения presence от клиента client2
+2021-03-16 15:23:13,153 - INFO - client.py - Отправка сообщения presence от клиента client3
+2021-03-16 15:23:13,153 - INFO - client.py - Сообщение presence от клиента client1 отправлено на сервер
+2021-03-16 15:23:13,153 - INFO - client.py - Сообщение presence от клиента client2 отправлено на сервер
+2021-03-16 15:23:13,153 - INFO - client.py - Сообщение presence от клиента client3 отправлено на сервер
+2021-03-16 15:23:13,153 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:23:13,153 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:23:13,153 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции client.create_connection() 
+2021-03-16 15:23:13,154 - INFO - client.py - Получен ответ {"action": "presence", "time": 1615897393.1407812, "user": {"account_name": "client2"}} от сервера для клиента client2
+2021-03-16 15:23:13,154 - DEBUG - decorators.py - Функция send_chat_message (('client client2',), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:23:13,154 - DEBUG - decorators.py - Функция send ((<utils.utils.ChatMessage object at 0x7fce334604c0>,), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:23:13,154 - INFO - client.py - Отправка сообщения chat от клиента client2
+2021-03-16 15:23:13,154 - INFO - client.py - Сообщение chat от клиента client2 отправлено на сервер
+2021-03-16 15:23:13,154 - DEBUG - decorators.py - Функция get_response ((), {}) вызвана из функции {client.client_id}') 
+2021-03-16 15:23:13,162 - CRITICAL - client.py - Не удалось подключиться к серверу [Errno 54] Connection reset by peer
+2021-03-16 15:23:13,162 - CRITICAL - client.py - Не удалось подключиться к серверу [Errno 54] Connection reset by peer
+2021-03-19 22:17:01,658 - INFO - client_log_config.py - Лог-файл от 2021-03-19 22:17:01.658424
+2021-03-19 22:17:50,185 - INFO - client_log_config.py - Лог-файл от 2021-03-19 22:17:50.185636
+2021-03-19 22:19:38,293 - INFO - client_log_config.py - Лог-файл от 2021-03-19 22:19:38.293374
+2021-03-20 12:59:01,116 - INFO - client_log_config.py - Лог-файл от 2021-03-20 12:59:01.116573
+2021-03-20 12:59:09,676 - INFO - client_log_config.py - Лог-файл от 2021-03-20 12:59:09.675601
+2021-03-20 12:59:38,384 - INFO - client_log_config.py - Лог-файл от 2021-03-20 12:59:38.384273
+2021-03-20 12:59:44,298 - INFO - client_log_config.py - Лог-файл от 2021-03-20 12:59:44.297876
+2021-03-20 13:01:30,872 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:01:30.872699
+2021-03-20 13:01:46,533 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:01:46.532141
+2021-03-20 13:02:37,785 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:02:37.784616
+2021-03-20 13:05:35,696 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:05:35.696280
+2021-03-20 13:15:18,085 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:15:18.085581
+2021-03-20 13:24:45,063 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:24:45.063399
+2021-03-20 13:25:04,507 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:25:04.507737
+2021-03-20 13:25:04,507 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:25:04.507737
+2021-03-20 13:25:04,507 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:25:04.507737
+2021-03-20 13:28:40,700 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:28:40.700333
+2021-03-20 13:28:40,700 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:28:40.700343
+2021-03-20 13:28:40,700 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:28:40.700333
+2021-03-20 13:28:59,022 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:28:59.022150
+2021-03-20 13:28:59,022 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:28:59.022158
+2021-03-20 13:28:59,022 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:28:59.022161
+2021-03-20 13:29:15,493 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:29:15.493883
+2021-03-20 13:29:15,493 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:29:15.493893
+2021-03-20 13:29:15,493 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:29:15.493910
+2021-03-20 13:30:35,315 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:30:35.315768
+2021-03-20 13:33:46,917 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:33:46.917489
+2021-03-20 13:34:47,710 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:34:47.710460
+2021-03-20 13:34:53,291 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:34:53.291044
+2021-03-20 13:36:45,421 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:36:45.421229
+2021-03-20 13:39:24,744 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:39:24.743945
+2021-03-20 13:44:18,782 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:44:18.781994
+2021-03-20 13:44:54,787 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:44:54.787685
+2021-03-20 13:45:32,493 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:45:32.493182
+2021-03-20 13:47:30,140 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:47:30.140064
+2021-03-20 13:47:38,798 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:47:38.797937
+2021-03-20 13:47:48,714 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:47:48.714119
+2021-03-20 13:48:45,362 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:48:45.362397
+2021-03-20 13:48:53,909 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:48:53.908845
+2021-03-20 13:49:21,001 - INFO - client_log_config.py - Лог-файл от 2021-03-20 13:49:21.001067
