@@ -2,7 +2,7 @@
 import argparse
 import json
 from time import time
-from utils.config import DEFAULT_IP_ADDRESS, DEFAULT_PORT, DICT_ANSWER_CODE, ENCODING, DEFAULT_CLIENT_ID, PRESENCE, CHAT
+from utils.config import DEFAULT_IP_ADDRESS, DEFAULT_PORT, DICT_ANSWER_CODE, ENCODING, DEFAULT_CLIENT_ID, PRESENCE
 
 
 class Message:
@@ -86,11 +86,10 @@ class Response:
 
 
 def create_arguments_parser():
-
-    parser = argparse.ArgumentParser(description='Укажите адрес и порт')
-    parser.add_argument('-a', '--addr', default=DEFAULT_IP_ADDRESS, help='IP адрес')
-    parser.add_argument('-p', '--port', type=int, default=DEFAULT_PORT, help='Порт (от 1024 до 65535)')
-    parser.add_argument('-i', '--id', default=DEFAULT_CLIENT_ID, help='id Клиента')
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-a',  type=str, default=DEFAULT_IP_ADDRESS)
+    parser.add_argument('-p',  type=int, default=DEFAULT_PORT)
+    parser.add_argument('-n', type=str, default='')
     args = parser.parse_args()
 
     try:
